@@ -1,6 +1,8 @@
 require 'test_helper'
 
 class RecipesControllerTest < ActionController::TestCase
+  #validates :title, uniqueness: true
+
   setup do
     @recipe = recipes(:one)
   end
