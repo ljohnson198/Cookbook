@@ -3,6 +3,8 @@
 <table>
   <tr>
     <th>Title</th>
+    <th>Calories</th>
+    <th>Category</th>
     <th>Last Updated</th>
     <th colspan="2">&nbsp;</th>
   </tr>
@@ -10,6 +12,8 @@
   <% @recipes.each do |recipe| %>
   <tr>
     <td><%= link_to recipe.title, recipe %></td>
+    <td><%= recipe.calories rescue "No Calories" %></td>
+    <td><%= recipe.category.name rescue "No Category" %></td>
     <td><%= time_ago_in_words(recipe.updated_at) %> ago</td>
     <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
     <td><%= button_to 'Destroy', recipe, confirm: 'Are you sure?', method: :delete %> </td>

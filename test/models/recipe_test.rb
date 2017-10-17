@@ -1,7 +1,6 @@
 require 'test_helper'
 
 class RecipeTest < ActiveSupport::TestCase
-  validates :title, presence: true
 
   test "creates a valid record" do  
     recipe = Recipe.new
@@ -36,4 +35,4 @@ class RecipeTest < ActiveSupport::TestCase
   end
 
 
-end
+

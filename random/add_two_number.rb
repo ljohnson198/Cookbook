@@ -17,5 +17,5 @@ message = "The sum of #{first_number} + #{second_number} is #{sum}"
 
 puts message
 
-# Maybe circle back around and do the 'try this' on page 52
+# Maybe circle back around and do the 'try this' items on page 52 (page 74 of pdf)
 
